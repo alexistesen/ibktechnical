@@ -1,0 +1,21 @@
+spring:
+  application:
+   name: ibktechnical
+  data:
+    mongodb:
+      database: ibkbase
+  kafka:
+    bootstrap-servers: localhost:9092
+server:
+  port: 8081
+
+logging:
+  level:
+    root: ERROR
+    org.springframework.web: DEBUG
+    com.ibk: DEBUG
+
+app:
+  analytics:
+    region: "US-EAST"
+    transaction-code: "TRANSACTION_CUSTOMER"
